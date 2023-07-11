@@ -1,0 +1,142 @@
+# 由 https://www.toptal.com/developers/gitignore/api/swift,xcode,macos,cocoapods 創建
+# 在 https://www.toptal.com/developers/gitignore?templates=swift,xcode,macos,cocoapods 進行編輯
+
+### CocoaPods ###
+## CocoaPods GitIgnore 模板
+
+# CocoaPods - 僅用於節省帶寬/節省推送時間
+# - 如果您有大量依賴的 pod，也很方便
+# - 按照 https://guides.cocoapods.org/using/using-cocoapods.html 切勿忽略鎖定文件
+豆莢/
+
+＃＃＃ 蘋果系統 ＃＃＃
+＃ 一般的
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 圖標必須以兩個 \r 結尾
+圖標
+
+
+# 縮略圖
+._*
+
+# 可能出現在卷根目錄中的文件
+.文檔修訂版-V100
+.fseventsd
+.Spotlight-V100
+.臨時項目
+.垃圾箱
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 可能在遠程 AFP 共享上創建的目錄
+.AppleDB
+.Apple桌面
+網絡垃圾文件夾
+臨時物品
+.apdisk
+
+### macOS 補丁 ###
+# iCloud 生成的文件
+*.icloud
+
+### 斯威夫特 ###
+# Xcode
+#
+# gitignore 貢獻者：記得更新 Global/Xcode.gitignore、Objective-C.gitignore 和 Swift.gitignore
+
+＃＃ 用戶設置
+x用戶數據/
+
+## 與 Xcode 8 及更早版本的兼容性（忽略不需要啟動 Xcode 9）
+*.xcscm藍圖
+*.xccheckout
+
+## 與 Xcode 3 及更早版本的兼容性（忽略不需要啟動 Xcode 4）
+建造/
+派生數據/
+*.移到一邊
+*.pbx用戶
+!default.pbxuser
+*.模式1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift 特定
+*.hmap
+
+## 應用程序打包
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## 遊樂場
+時間線.xc時間線
+遊樂場.xcworkspace
+
+# Swift 包管理器
+# 如果您想避免從 Swift Package Manager 依賴項簽入源代碼，請添加此行。
+# 包/
+# 封裝.pin
+# 包.已解決
+# *.xcodeproj
+# Xcode 自動生成此目錄，其中包含 .xcworkspacedata 文件和 xcuserdata
+# 因此除非您已將包配置文件添加到項目中，否則不需要它
+#.swiftpm
+
+。建造/
+
+# CocoaPods
+# 我們建議不要將 Pods 目錄添加到 .gitignore。然而
+# 你應該自己判斷，優缺點參見：
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pod/
+# 如果您想避免從 Xcode 工作區簽入源代碼，請添加此行
+# *.xc工作空間
+
+# 迦太基
+# 如果您想避免從 Carthage 依賴項中籤入源代碼，請添加此行。
+# 迦太基/結帳
+
+迦太基/建造/
+
+# Accio 依賴管理
+依賴項/
+.accio/
+
+＃ 快車道
+# 建議不要將屏幕截圖存儲在 git 存儲庫中。
+# 相反，在需要時使用 fastlane 重新生成屏幕截圖。
+# 有關推薦設置的更多信息，請訪問：
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/截圖/**/*.png
+快車道/測試輸出
+
+# 代碼注入
+# 新代碼注入工具之後有一個生成的文件夾/iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOS注入項目/
+
+### Xcode ###
+
+## Xcode 8 及更早版本
+
+### Xcode 補丁 ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# https://www.toptal.com/developers/gitignore/api/swift,xcode,macos,cocoapods 結束
